@@ -1,0 +1,83 @@
+
+.body-experiencias {
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url("../images/fondoExperiencias.jpeg");
+    background-attachment: fixed;
+}
+
+.conjunto-packs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    
+}
+
+
+.elemento-pack {
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 13cm;
+    background-color: rgb(255, 255, 255, 0.8);
+    
+}
+
+.nombre-pack {
+    height: 15%;
+    text-align: center;
+}
+
+.estructura-foto {
+    height: 85%;
+    background-size: cover;
+    
+}
+
+#foto1-pack {
+    background-image: url("../images/packNavidadFamilia.jpg");
+}
+
+#foto2-pack {
+    background-image: url("../images/packVeranoFamilia.jpeg");
+}
+
+#foto3-pack {
+    background-image: url("../images/packFestivosFamilia.jpg");
+}
+
+#foto4-pack {
+    background-image: url("../images/packNavidadPareja.jpg");
+}
+
+#foto5-pack {
+    background-image: url("../images/packVeranoPareja.jpg");
+}
+
+#foto6-pack {
+    background-image: url("../images/packFestivosPareja.jpeg");
+}
+
+#foto7-pack {
+    background-image: url("../images/packNavidadAmigos.jpg");
+}
+
+#foto8-pack {
+    background-image: url("../images/packVeranoAmigos.jpg");
+}
+
+#foto9-pack {
+    background-image: url("../images/packFestivosAmigos.jpg");
+}
+
+.reserva-pack {
+    position: relative;
+    bottom: -390px;
+    left: 0%;
+}
+

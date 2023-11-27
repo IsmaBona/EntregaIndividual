@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    padding-left: 30%;
+}
+
+.color-titulo {
+    color: rgb(247, 247, 247);
+    
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.botonMenu {
+    text-decoration: none;
+    position: relative; 
+    color: white;
+    transition: color 0.7s, background-position 0.7s; 
+}
+
+.botonMenu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0; 
+    height: 4px;
+    background: currentColor;
+    transition: width 0.7s;
+}
+
+.botonMenu:hover {
+    color: #d2412b;
+}
+
+.botonMenu:hover::after {
+    width: 100%;
+}
+
+
+
+.header {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    margin-top: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+
+
+.title {
+    display: flex;
+    width: 30%;
+    background-position: left center;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    transform: scale(1);
+    transition: transform 0.6s ease;
+    
+    
+}
+
+.title:hover {
+    transform: scale(1.08);  
+    
+}
+
+#busqueda {
+    margin-top: 3.5%;
+    width: 70%;
+    text-align: center;
+}
+
+.espacio {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.contenedor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.88);
+    height: 9%;
+    padding-left: 8%;
+    z-index: 2;
+}
+
+.espacio-reserva {
+    margin-right: 6%;
+}
+
+#inputDate {
+    background-color: rgb(45, 45, 45);
+    color: rgb(190, 188, 188);
+    border-color: rgb(55, 54, 54);
+    height: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#inputTime {
+    background-color: rgb(46, 46, 46);
+    color: rgb(190, 188, 188);
+    border-color: rgb(71, 69, 69);
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#hora {
+    background-color: rgb(46, 46, 46);
+    color: rgb(190, 188, 188);
+    border-color: rgb(71, 69, 69);
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#tamanio {
+    background-color: rgb(46, 46, 46);
+    color: rgb(205, 189, 189);
+    border-color: rgb(71, 69, 69);
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#boton-reserva {
+    height: 90%;
+    padding-left: 4%;
+    padding-right: 4%;
+    cursor:pointer;
+}
+
+.footer {
+    height: 50px;
+    background-color: #282727;
+    z-index: 2;
+    cursor: pointer;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.boton-experiencias {
+    display: inline-block;
+}
+
+.boton-experiencias-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}   
+
+.boton-experiencias:hover .boton-experiencias-content {
+    display: block;
+}
+
+.boton-experiencias-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.boton-experiencias-content a:hover {
+    background-color: #ddd;
+}
+
+
+

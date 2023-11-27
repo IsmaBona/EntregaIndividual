@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/stylesPersonal.css">
+    <link rel="icon" href="images/logo2.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA COCINA DE JUAN</title>
+</head>
+<body id="body-personal">
+    <div class="header">
+        <div class="title">
+            <h1><a class="color-titulo" href="index.html">LA COCINA <br> DE JUAN</a></h1>
+            
+        </div>
+        <div id="busqueda">
+            <div class="boton-experiencias espacio">
+                <a class="botonMenu" href="experiencias.html">Experiencias</a>
+                <div class="boton-experiencias-content">
+                    <a href="experiencias.html#familias">Familias</a>
+                    <a href="experiencias.html#parejas">Parejas</a>
+                    <a href="experiencias.html#amigos">Amigos</a>
+                </div>
+            </div>
+            <div class="boton-experiencias espacio">
+                <a class="espacio botonMenu" href="menu.html">Menú</a>
+                <div class="boton-experiencias-content">
+                    <a href="menu.html#primeros">Primeros</a>
+                    <a href="menu.html#carnes">Nuestras Carnes</a>
+                    <a href="menu.html#pescados">Nuestros Pescados</a>
+                    <a href="menu.html#postres">Postres</a>
+                </div>
+            </div>
+            <a class="espacio botonMenu" href="personal.html">Trabaja con nosotros</a>
+        </div>
+    </div> 
+    <div id="formulario">
+        <form> 
+            <fieldset id="fondo-fieldset">
+                <legend>Datos Empleado</legend>
+    
+                <label for="nombre">Nombre completo : </label><br><br>
+                <input type="text" name="nombre" id="nombre"><br><br>
+                <label for="correo">Correo de contacto:</label><br><br>
+                <input type="email" id="correo"><br><br>
+                <label for="telefono">Teléfono de contacto:</label><br><br>
+                <input type="number" id="telefono"><br><br>
+                <label for="edad">Fecha de nacimiento: </label><br><br>
+                <input type="date" id="edad">
+                 <br><br>
+                <label for="trabajo">¿A que trabajo quieres aplicar?</label><br><br>
+                <select id="trabajo" name="trabajo">
+                    <optgroup label="Categorías">
+                        <option>Camarero</option>
+                        <option>Bartender</option>
+                        <option>Cocinero</option>
+                        <option>Ayudante de cocian</option>
+                    </optgroup>
+                </select> <br><br>
+                <label for="experiencia">¿Cuántos años de experiencia tienes en tu campo?</label> <br><br>
+                <select id="experiencia" name="experiencia">
+                    <optgroup label="Categorías">
+                        <option>Sin experiencia</option>
+                        <option>0-1 años de experiencia</option>
+                        <option>1-3 años de experiencia</option>
+                        <option>3+ años de experiencia</option>
+                    </optgroup>
+                </select> <br><br>
+                <textarea placeholder="Explica tus razones por las que quieres trabajar con nosotros" name="Comentarios" rows="5"></textarea>
+            </fieldset><br>
+            <input type="checkbox" name="condiciones" id="condiciones">
+            <label id="labelForm">Acepta que sus datos sean tratados por Cocinas S.L</label><br><br>
+            <input type="submit" value="Enviar solicitud"><br><br><br>
+        </form>
+    </div>
+    <div class="footer">
+        Terminos y Condiciones
+    </div>
+    <br><br><br><br><br>  
+    <div class="contenedor">
+        <input id="inputDate" class="espacio-reserva" type="date" name="date">
+        <select id="hora" class="espacio-reserva" name="hora">
+            <optgroup label="Horas">
+                <option value="hora" selected>Horas</option>
+            </optgroup>
+            <optgroup label="Horas disponibles para comer">
+                <option value="12:00">12:00</option>
+                <option value="12:15">12:15</option>
+                <option value="12:30">12:30</option>
+                <option value="12:45">12:45</option>
+                <option value="13:00">13:00</option>
+                <option value="13:15">13:15</option>
+                <option value="13:30">13:30</option>
+                <option value="13:45">13:45</option>
+                <option value="14:00">14:00</option>
+                <option value="14:15">14:15</option>
+                <option value="14:30">14:30</option>
+                <option value="14:45">14:45</option>
+                <option value="15:00">15:00</option>
+                <option value="15:15">15:15</option>
+                <option value="15:30">15:30</option>
+            </optgroup>
+    
+            <optgroup label="Horas disponibles para cenar">
+                <option value="20:00">20:00</option>
+                <option value="20:15">20:15</option>
+                <option value="20:30">20:30</option>
+                <option value="20:45">20:45</option>
+                <option value="21:00">21:00</option>
+                <option value="21:15">21:15</option>
+                <option value="21:30">21:30</option>
+                <option value="21:45">21:45</option>
+                <option value="22:00">22:00</option>
+                <option value="22:15">22:15</option>
+                <option value="22:30">22:30</option>
+                <option value="22:45">22:45</option>
+                <option value="23:00">23:00</option>
+            </optgroup>
+        </select>
+        <select id="tamanio" name="tamanio" class="espacio-reserva">
+            <option value="reserva" selected>Tamaño de la reserva</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button type="button" id="boton-reserva" class="espacio-reserva">Reservar</button>
+    </div>
+    
+</body>
+</html>
